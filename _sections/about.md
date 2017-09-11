@@ -1,6 +1,6 @@
 ---
 layout: about.html
-tite: Hands on experts
+title: Hands on experts
 subtitle: Treatments with a focus on long-term outcomes
 lead: We have been achieving positive long-term outcomes for our clients since 2007
 ---
