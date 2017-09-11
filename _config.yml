@@ -1,5 +1,5 @@
 name: Strathmore Physiotheraphy &amp; Pilates
 markdown: kramdown
 collections:
-  sections:
+  _sections:
     output: true
