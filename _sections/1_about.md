@@ -1,4 +1,0 @@
----
-name: about
-title: About
----
