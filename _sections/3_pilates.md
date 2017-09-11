@@ -1,4 +1,4 @@
 ---
-layout: pilates.html
+name: pilates
 title: Clinical pilates
 ---
