@@ -102,9 +102,7 @@
 {% for section in site.sections %}
   
   <div>section : {{section.name}} | {{section.title}}</div>
-{% case section.name | strip %}
-  
-[% when "aboutus" %}
+{% if section.name == 'aboutus' %}
   
 <!-- about -->
 <div id="about" class="block block-inverse block-secondary red-bg">
@@ -124,8 +122,10 @@
     </div>
   </div>
 </div>
+
+{% endif %}
   
-{% when "physiotherapy" %}
+{% if section.name == 'physiotherapy' %}
 
 <!-- physiotherapy -->
 <div id="physiotherapy" class="block block-secondary">
@@ -167,7 +167,9 @@
   </div>
 </div>
 
-{% when "pilates" %}
+{% endif %}
+  
+{% if section.name == 'pilates' %}
   
 <!-- clinical pilates -->
 <div id="clinical-pilates" class="block block-secondary">
@@ -190,7 +192,9 @@ Unlike the more aerobics-style general pilates classes, your clinical pilates tr
   </div>
 </div>
 
-{% when "firstvisit" %}  
+{% endif %}
+  
+{% if section.name == 'firstvisit' %} 
   
 <!-- What to expect -->
 <div id="first-visit" class="block block-secondary">
@@ -217,7 +221,9 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
   </div>
 </div>
 
-{% when "staff" %}
+{% endif %}
+  
+{% if section.name == 'staff' %}
   
 <!-- staff -->
 <div id="staff" class="block block-secondary app-high-praise p-b-0">
@@ -248,7 +254,9 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
   </div>
 </div>
   
-{% when "fees" %}
+{% endif %}
+  
+{% if section.name == 'fees' %}
 
 <!-- fees -->
 <div id="fees" class="block block-secondary app-block-marketing-grid offwhite-bg">
@@ -285,8 +293,10 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
     </div>
   </div>
 </div>
+
+{% endif %}
   
-{% when "summary" %}
+{% if section.name == 'summary' %}
 
 <!-- summary -->
 <div class="block block-secondary block-inverse app-block-marketing-grid red-bg">
@@ -325,7 +335,9 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
   </div>
 </div>
   
-{% when "contact" %}
+{% endif %}
+  
+{% if section.name == 'contact' %}
 
 <!-- contact -->
 <div id="contact" class="block block-inverse app-footer">
@@ -385,9 +397,8 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
     </div>
   </div>
 </div>
-  
-{% endcase %}  
-{% endfor %}
+   
+{% endif %}
   
 <!-- end sections -->
 
