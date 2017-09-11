@@ -38,29 +38,13 @@
 
   <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
     <ul class="nav nav-bordered nav-stacked">
+      {% for menuitem in page.menu %}
       <li >
-        <a href="#about">About</a>
+        <a href="#{{ menuitem }}">{{ menuitem }}</a>
       </li>
-      <li >
-        <a href="#physiotherapy">Physiotherapy</a>
-      </li>
-      <li >
-        <a href="#clinical-pilates">Clinical Pilates</a>
-      </li>
-      <li >
-        <a href="#first-visit">First Visit</a>
-      </li>
-      <li >
-        <a href="#staff">Staff</a>
-      </li>
-      <li >
-        <a href="#fees">Fees</a>
-      </li>
-      <li >
-        <a href="#contact">Contact</a>
-      </li>
+      {% endfor %}
       <li>
-        <span class="icon icon-phone">&nbsp;</span><a href="tel:0393793831">(03) 9379 3831</a>
+        <span class="icon icon-phone">&nbsp;</span><a href="tel:0393793831">{{ page.telephone }}</a>
       </li>
     </ul>
 </div>
