@@ -100,6 +100,8 @@
 
 <!-- start sections -->
 {% for item in site.sections %}
+  
+  {{item.name}} | {{item.title}}
 {% case item.name %}
   
 [% when "about" %}
