@@ -102,7 +102,7 @@
 {% for section in site.sections %}
   
   <div>section : {{section.name}} | {{section.title}}</div>
-{% case section.name %}
+{% case section.name | strip %}
   
 [% when "about" %}
   
