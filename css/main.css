@@ -1,43 +1,89 @@
-body {
-    margin: 60px auto;
-    width: 70%;
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-a {
-    text-decoration: none;
-    color: #999;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-}
 
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
-}
+        .red-tint:before{
+          content: '';
+          position: absolute;
+          width: inherit;
+          height: inherit;
+          top: 0;
+          left: 0;
+          background: rgba(40,40,40,0.2);
+        }
 
-ul.posts li {
-    list-style: none;
-}
+        .navbar-transparent {
+          background: rgba(0,0,0,0.2);
+        }
+
+        .navbar-transparent .navbar-nav {
+          background-image: url(assets/img/spp_logo_thumb.png);
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          padding-left: 4rem;
+        }
+
+        .navbar-transparent .navbar-nav li a{
+          font-weight: bold;
+        }
+
+        .navbar-transparent .navbar-nav li a:hover{
+          background-color: rgb(204,0,0);
+          color: #fff;
+          border-radius: 3px;
+        }
+
+        .red-bg {
+          background-color: rgba(204,0,0,0.85)
+        }
+
+        .offwhite-bg {
+          background-color: rgba(245,245,245,0.85)
+        }
+
+        .btn-primary {
+          background-color: rgb(204,0,0);
+          border-color: rgb(204,0,0)
+        }
+
+        .block-secondary {
+          border-bottom: 2px solid rgba(245,245,245,0.85)
+        }
+
+        .google-maps {
+          position: relative;
+          padding-bottom: 75%;
+          height: 0;
+          overflow: hidden;
+        }
+
+        .google-maps iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .fee-item {
+          width: 100%;
+        }
+
+        .fee-desc {
+          width: 80%;
+          display: inline-block;
+          text-align: left;
+        }
+
+        .fee-amount {
+          width: 20%;
+          display: inline-block;
+          text-align: right;
+        }
+
+        .fee-amount::before{
+          content: '$';
+          /* margin-left: 3rem; */
+        }
+
+        .stage-shelf {
+          position: fixed;
+        }
