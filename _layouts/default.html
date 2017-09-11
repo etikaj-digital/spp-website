@@ -100,7 +100,9 @@
 
 <!-- start sections -->
 
-  {% include_relative _sections/about.html %}
+  {% for section in site.sections %}
+  <p>{{section.title}}
+  {% endfor %}
   
 <!-- end sections -->
 
