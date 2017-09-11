@@ -1,4 +1,4 @@
 ---
-layout: contact.html
+name: contact
 title: Contact Us
 ---
