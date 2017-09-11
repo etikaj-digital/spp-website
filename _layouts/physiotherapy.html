@@ -1,0 +1,34 @@
+<!-- physiotherapy -->
+<div id="physiotherapy" class="block block-secondary">
+  <div class="container">
+    <div class="row app-align-center">
+
+      <div class="col-sm-5 hidden-xs">
+        <img class="app-iphone" src="/img/physiotherapy.jpg" style="width: 100%;">
+      </div>
+
+      <div class="col-sm-6 col-sm-offset-1">
+        <h6 class="text-muted text-uppercase">{{ page.title }}</h6>
+        <h3 class="m-t-0">{{ page.subtitle }}</h3>
+        <p class="lead m-b-md">{{ page.lead }}</p>
+        <div class="row hidden-sm" style="padding-bottom: 0rem">
+          <div class="col-sm-6 m-b-md">
+            <ul class="iconlist">
+            {% for item in list1 %}
+              <li><span class="icon icon-check"></span>{{ item }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ul class="iconlist">
+            {% for item in list2 %}
+              <li><span class="icon icon-check"></span>{{ item }}</li>
+            {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
