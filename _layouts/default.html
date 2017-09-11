@@ -99,10 +99,10 @@
 </div>
 
 <!-- start sections -->
-{% for item in site.sections %}
+{% for section in site.sections %}
   
-  {{item.name}} | {{item.title}}
-{% case item.name %}
+  <div>section : {{section.name}} | {{section.title}}</div>
+{% case section.name %}
   
 [% when "about" %}
   
