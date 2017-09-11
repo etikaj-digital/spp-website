@@ -31,7 +31,7 @@
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="/img/favicons/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
-      <link ref="/css/main.css" rel="stylesheet">
+      <link href="/css/main.css" rel="stylesheet">
   </head>
 
 <body>
@@ -98,24 +98,7 @@
 
 </div>
 
-<!-- about -->
-<div id="about" class="block block-inverse block-secondary red-bg">
-  <div class="container">
-    <div class="row app-align-center">
-      <div class="col-sm-5 col-sm-push-7">
-        <img src="assets/img/spp_logo_medium.png" style="max-width: 100%">
-      </div>
-
-      <div class="col-sm-6 col-sm-pull-5">
-        <h6 class="text-muted text-uppercase">Hands on experts</h6>
-        <h3 class="m-t-0">Treatments with a focus on long-term outcomes</h3>
-        <p class="lead m-b-md text-muted">We have been achieving positive long-term outcomes for our clients since 2007.</p>
-        <p class="m-b-md text-muted">We are specialists in <em>hands on</em> physiotherapy for sports, spinal and musculoskeletal conditions. We also operate an extensive clinical pilates program in our fully-equipped studio.</p>
-        <p class="m-b-md text-muted">We devise treatment plans suited to your individual needs. Whether you are a high-level athlete looking to improve performance or just someone who wants to get moving again.</p>
-      </div>
-    </div>
-  </div>
-</div>
+{% include about.html %}
 
 <!-- physiotherapy -->
 <div id="physiotherapy" class="block block-secondary">
@@ -383,10 +366,10 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
 
 </div><!-- #stage -->
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.bootstrap-autohidingnavbar.js"></script>
-    <script src="assets/js/toolkit.js"></script>
-    <script src="assets/js/application.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script src="/js/toolkit.js"></script>
+    <script src="/js/application.js"></script>
     <script type="text/javascript">
       $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
