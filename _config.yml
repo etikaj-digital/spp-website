@@ -1,4 +1,2 @@
 collections:
-  sections:
-    output: true
-    permalink: /:name
+- sections
