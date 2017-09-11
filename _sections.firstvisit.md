@@ -1,4 +1,4 @@
 ---
-layout: firstvisit.html
+name: firstvisit
 title: What to expect
 ---
