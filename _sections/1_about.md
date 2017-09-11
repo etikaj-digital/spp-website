@@ -1,4 +1,4 @@
 ---
 name: about
-title: Hands on experts
+title: About
 ---
