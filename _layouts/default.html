@@ -99,9 +99,9 @@
 </div>
 
 <!-- start sections -->
-{% site.time %}
-  {% for section in site.sections %}
-  <p>{{section.title}}</p>
+{{ site.time }}
+  {% for item in site.sections %}
+  <p>{{item.title}}</p>
   {% endfor %}
   
 <!-- end sections -->
