@@ -100,8 +100,7 @@
 
 <!-- start sections -->
 {% for section in site.sections %}
-  
-  <div>section : {{section.name}} | {{section.title}}</div>
+
 {% if section.name == 'aboutus' %}
   
 <!-- about -->
@@ -346,29 +345,32 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
       <div class="col-sm-5 m-b-md">
         <ul class="list-unstyled list-spaced">
           <li class="text-muted">
-<strong>Strathmore Physiotherapy &amp; Pilates</strong> provides the latest research-based treatments, including clinical pilates, to clients in Strathmore, Essendon, Pascoe Vale, Oak Park and Moonee Ponds.
+            {{ section.content }}
           </li>
         </ul>
         <br/>
         <ul class="list-unstyled list-spaced">
           <li class="m-b"><h6 class="text-uppercase">Opening hours</h6></li>
           <li class="text-muted">
-            <strong>Monday</strong> 8.45am - 8pm
+            <strong>Monday</strong> {{ section.opening.Monday }}
           </li>
           <li class="text-muted">
-            <strong>Tuesday</strong> 8am - 8pm
+            <strong>Tuesday</strong> {{ section.opening.Tuesday }}
           </li>
           <li class="text-muted">
-            <strong>Wednesday</strong> 8.30am - 8pm
+            <strong>Wednesday</strong> {{ section.opening.Wednesday }}
           </li>
           <li class="text-muted">
-            <strong>Thursday</strong> 9am - 1pm / 5pm - 8pm
+            <strong>Thursday</strong> {{ section.opening.Thursday }}
           </li>
           <li class="text-muted">
-            <strong>Friday</strong> 8am - 5.30pm
+            <strong>Friday</strong> {{ section.opening.Friday }}
           </li>
           <li class="text-muted">
-            <strong>Closed Saturday and Sunday.</strong>
+            <strong>Saturday</strong> {{ section.opening.Saturday }}
+          </li>
+          <li class="text-muted">
+            <strong>Sunday</strong> {{ section.opening.Sunday }}
           </li>
         </ul>
       </div>
@@ -376,13 +378,13 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
         <ul class="list-unstyled list-spaced">
           <li class="m-b"><h6 class="text-uppercase">Contact</h6></li>
           <li class="text-muted">
-            <strong>Address</strong> 1/279 Napier St, Strathmore VIC 3041
+            <strong>Address</strong> {{ section.address }}
           </li>
           <li class="text-muted">
-            <strong>Phone</strong> (03) 9379 3831
+            <strong>Phone</strong> {{ section.phone }}
           </li>
           <li class="text-muted">
-            <strong>Email</strong> <a href="mailto:contact@strathmorephysioandpilates.com.au">contact@strathmorephysioandpilates.com.au</a>
+            <strong>Email</strong> <a href="mailto:{{ section.email }}">{{ section.email  }}</a>
           </li>
         </ul>
         <br/>
