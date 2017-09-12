@@ -7,11 +7,11 @@ opening:
 - day: Monday
   times: 8.45am - 8pm
 - day: Tuesday
-  times: 8am - 8pm
+  times: 9am - 6pm
 - day: Wednesday
-  times: 8.30am - 8pm
+  times: 8am - 8pm
 - day: Thursday
-  times: 9am - 1pm / 5pm - 8pm
+  times: closed
 - day: Friday
   times: 8am - 5.30pm
 - day: Saturday
