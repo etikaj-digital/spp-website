@@ -1,6 +1,6 @@
 ---
-first: Ashley
-last: Metcalfe
+firstname: Ashley
+lastname: Metcalfe
 jobtitle: owner Strathmore Physiotherapy and Pilates
 photo: ash.jpg
 ---
