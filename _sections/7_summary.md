@@ -9,7 +9,7 @@ summary:
   desc: Except for Medicare Enhanced Primary Care and DVA patients.
 - heading: TAC and Workcover welcome.
   desc: No gap fee charged.
-- heading: DMA trained.
+- heading: DMA Clinical Pilaes trained.
   desc: Your program will incorporate the most modern, scientific techniques available..
 - heading: Pilates classes available.
   desc: Small group sessions run mornings, afternoons and evenings.
