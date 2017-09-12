@@ -3,7 +3,7 @@ layout: default
 title: Strathmore Physiotherapy &amp; Pilates
 menu: 
 - Physiotherapy
-- Clinical Pilates
+- Pilates
 - First Visit
 - Staff
 - Fees
