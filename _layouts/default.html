@@ -346,9 +346,11 @@
           <li class="text-muted">
             <strong>Phone</strong> {{ section.phone }}
           </li>
+          {% if section.email %}
           <li class="text-muted">
             <strong>Email</strong> <a href="mailto:{{ section.email }}">{{ section.email  }}</a>
           </li>
+          {% endif %}
         </ul>
         <br/>
         <div class="google-maps">
@@ -371,10 +373,10 @@
 
 </div><!-- #stage -->
 
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.bootstrap-autohidingnavbar.js"></script>
-    <script src="/js/toolkit.js"></script>
-    <script src="/js/application.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script src="js/toolkit.js"></script>
+    <script src="js/application.js"></script>
     <script type="text/javascript">
       $(function() {
         $('a[href*="#"]:not([href="#"])').click(function() {
