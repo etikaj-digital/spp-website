@@ -2,7 +2,7 @@
 name: aboutus
 heading: Hands-on experts
 subheading: Treatments with a focus on long-term outcomes
-lead:We have been achieving positive long-term outcomes for our clients since 2007.
+lead: We have been achieving positive long-term outcomes for our clients since 2007.
 ---
 We are specialists in hands on physiotherapy for sports, spinal and musculoskeletal conditions. We also operate an extensive clinical pilates program in our fully-equipped studio.
 
