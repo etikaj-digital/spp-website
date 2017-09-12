@@ -1,7 +1,6 @@
 ---
 name: contact
 title: Contact Us
-email: contact@strathmorephysioandpilates.com.au
 address: 1/279 Napier St, Strathmore VIC 3041
 phone: (03) 9379 3831
 opening:
