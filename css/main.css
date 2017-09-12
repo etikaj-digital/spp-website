@@ -14,7 +14,7 @@
         }
 
         .navbar-transparent .navbar-nav {
-          background-image: url(assets/img/spp_logo_thumb.png);
+          background-image: url(/img/spp_logo_thumb.png);
           background-position: left center;
           background-repeat: no-repeat;
           background-size: contain;
