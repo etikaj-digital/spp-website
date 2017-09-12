@@ -1,10 +1,8 @@
 ---
-name: staff
-staff:
-- first: Ashley
-  last: Metcalfe
-  jobtitle: owner Strathmore Physiotherapy and Pilates
-  photo: ash.jpg
+first: Ashley
+last: Metcalfe
+jobtitle: owner Strathmore Physiotherapy and Pilates
+photo: ash.jpg
 ---
 After graduating from LaTrobe University, Ash spent seven years gaining experience in Melbourne’s hospital system and in private physiotherapy practices.
 
