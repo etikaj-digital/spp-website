@@ -76,7 +76,7 @@
       </li>
       {% endfor %}
       <li>
-        <span class="icon icon-phone">&nbsp;</span><a href="tel:{{ page.telephone | replace: " ","" | replace: ")","" }}">{{ page.telephone }}</a>
+        <a href="tel:{{ page.telephone | replace: " ","" | replace: ")","" | replace: "(","" }}"><span class="icon icon-phone">&nbsp;</span>{{ page.telephone }}</a>
       </li>
       </ul>
     </div><!--/.nav-collapse -->
