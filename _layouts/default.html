@@ -112,11 +112,10 @@
       </div>
 
       <div class="col-sm-6 col-sm-pull-5">
-        <h6 class="text-muted text-uppercase">Hands on experts</h6>
-        <h3 class="m-t-0">Treatments with a focus on long-term outcomes</h3>
-        <p class="lead m-b-md text-muted">We have been achieving positive long-term outcomes for our clients since 2007.</p>
-        <p class="m-b-md text-muted">We are specialists in <em>hands on</em> physiotherapy for sports, spinal and musculoskeletal conditions. We also operate an extensive clinical pilates program in our fully-equipped studio.</p>
-        <p class="m-b-md text-muted">We devise treatment plans suited to your individual needs. Whether you are a high-level athlete looking to improve performance or just someone who wants to get moving again.</p>
+        <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+        <h3 class="m-t-0">{{ section.subheading }}</h3>
+        <p class="lead m-b-md text-muted">{{ section.lead }}</p>
+        <p class="m-b-md text-muted">{{ section.content }}</p>
       </div>
     </div>
   </div>
@@ -136,27 +135,22 @@
       </div>
 
       <div class="col-sm-6 col-sm-offset-1">
-        <h6 class="text-muted text-uppercase">Physiotherapy</h6>
-        <h3 class="m-t-0">Our commitment to continuous learning means you get the latest research-based treatments.</h3>
-        <p class="lead m-b-md">Our qualified physiotherapists use their extensive knowledge to develop the most effective treatment plans for problems such as:</p>
+        <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+        <h3 class="m-t-0">{{ section.subheading }}</h3>
+        <p class="lead m-b-md">{{ section.lead }}</p>
         <div class="row hidden-sm" style="padding-bottom: 0rem">
           <div class="col-sm-6 m-b-md">
             <ul class="iconlist">
-              <li><span class="icon icon-check"></span>Neck, middle and lower back pain</li>
-              <li><span class="icon icon-check"></span>Sports Injuries</li>
-              <li><span class="icon icon-check"></span>Headaches</li>
-              <li><span class="icon icon-check"></span>Muscle, joint and tendon injuries</li>
-              <li><span class="icon icon-check"></span>Poor postural control</li>
+            {% for item in section.leftlist %}
+              <li><span class="icon icon-check"></span>{{ item }}</li>
+            {% endfor %}
             </ul>
           </div>
           <div class="col-sm-6">
             <ul class="iconlist">
-              <li><span class="icon icon-check"></span>Pre and post pregnancy related pain</li>
-              <li><span class="icon icon-check"></span>Nerve pain and neurodynamic dysfunction</li>
-              <li><span class="icon icon-check"></span>Chronic pain</li>
-              <li><span class="icon icon-check"></span>Hypermobility syndrome</li>
-              <li><span class="icon icon-check"></span>Pre and post surgery rehabilitation</li>
-              <li><span class="icon icon-check"></span>Workcover/TAC injuries</li>
+            {% for item in section.rightlist %}
+              <li><span class="icon icon-check"></span>{{ item }}</li>
+            {% endfor %}
             </ul>
           </div>
         </div>
@@ -179,13 +173,10 @@
       </div>
 
       <div class="col-sm-6 col-sm-pull-5">
-        <h6 class="text-muted text-uppercase">Experts in clinical pilates</h6>
-        <h3 class="m-t-0">Extensive programs in our fully equipped pilates studio.</h3>
-        <p class="lead m-b-md">Clinical pilates is an individualised form of resistance-based exercise based on ongoing clinical research. The exercises provide dynamic core stability to improve the  functional strength of your spine and limbs.</p>
-        <p class="m-b-md">
-Unlike the more aerobics-style general pilates classes, your clinical pilates treatment is tailored to your specific needs and delivered by our accredited physiotherapists in our fully equipped studio.</p>
-        <p class="m-b-md">It all begins with a comprehensive consultation. This is followed by four one-on-one sessions to allow you to become comfortable with your program and the equipment. You can then choose to join a class (maximum of 3 participants) or continue with the one-on-one sessions.</p>
-        <p class="m-b-md">Classes run mornings, afternoons and evenings.</p>
+        <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+        <h3 class="m-t-0">{{ section.subheading }}</h3>
+        <p class="lead m-b-md">{{ section.lead }}</p>
+        <p class="m-b-md">{{ section.content }}</p>
       </div>
     </div>
   </div>
@@ -204,17 +195,15 @@ Unlike the more aerobics-style general pilates classes, your clinical pilates tr
       </div>
 
       <div class="col-sm-6 col-sm-offset-1">
-        <h6 class="text-muted text-uppercase">What to expect on your first visit</h6>
-        <h3 class="m-t-0">Immediate improvement and a clear treatment plan</h3>
-        <p class="lead m-b-md">After your first visit we aim to have you feeling an immediate improvement and provide you with:</p>
+        <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+        <h3 class="m-t-0">{{ section.subheading }}</h3>
+        <p class="lead m-b-md">{{ section.lead }}</p>
         <ul class="lead m-b-md iconlist">
-          <li><span class="icon icon-check"></span>a clear understanding of your problem</li>
-          <li><span class="icon icon-check"></span>a treatment plan</li>
-          <li><span class="icon icon-check"></span>strategies to prevent the problem reoccurring.</li>
+        {% for item in section.list %}
+          <li><span class="icon icon-check"></span>{{ item }}</li>
+        {% endfor %}
         </ul>
-        <p class="m-b-md">We take the time to thoroughly assess you and any scans or referrals to develop an accurate diagnosis. We'll also talk to you about your aims and goals.</p>
-        <p class="m-b-md">
-We then discuss your prognosis with you. We'll clearly outline your treatment plan and how long it will take. We are always striving for a long term cure, not just a short term fix.</p>
+        <p class="m-b-md">{{ section.content }}</p>
       </div>
     </div>
   </div>
@@ -229,10 +218,14 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
   <div class="container">
 
     <div id="carousel-staff" class="carousel carousel-light slide" data-ride="carousel">
+      {% if site.staff.size >= 2 %}
       <ol class="carousel-indicators">
         <li data-target="#carousel-staff" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-staff" data-slide-to="1"></li>
+        {% for person in site.staff | offset:1 %}
+           <li data-target="#carousel-staff" data-slide-to="1"></li>
+        {% endfor %}
       </ol>
+      {% endif %}
       <div class="carousel-inner" role="listbox">
         {% for person in site.staff %}
         <div class="item active">
