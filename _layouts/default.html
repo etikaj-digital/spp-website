@@ -263,31 +263,25 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
 
     <div class="row m-b-lg">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
-        <h6 class="text-muted text-uppercase">Our Fees</h6>
-        <h3  class="m-t-0 m-b">We have HICAPS and all our services can be claimed on your private health insurance<sup>*</sup>.</h3>
+        <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+        <h3  class="m-t-0 m-b">{{ section.subheading }}</h3>
       </div>
     </div>
 
     <div class="row">
+      {% for item in section.fees %}
       <div class="col-sm-6 col-sm-offset-3 p-x-md m-b-lg">
-        <p><strong>Physiotherapy</strong></p>
-        <p class="fee-item"><span class="fee-desc">Initial consultation (40 mins)</span><span class="fee-amount">80</span></p>
-        <p class="fee-item"><span class="fee-desc">Consultation (20-30 mins)</span><span class="fee-amount">65</span></p>
+        <p><strong>{{ item.category }}</strong></p>
+        {% for services in item.services %}
+        <p class="fee-item"><span class="fee-desc">{{ service.description }}</span><span class="fee-amount">{{ service.charge }}</span></p>
+        {% endfor %}
       </div>
-      <div class="col-sm-6 col-sm-offset-3 p-x-md m-b-lg">
-        <p><strong>Clinical Pilates</strong></p>
-        <p class="fee-item"><span class="fee-desc">Initial consultation (40 mins)</span><span class="fee-amount">80</span></p>
-        <p class="fee-item"><span class="fee-desc">One-on-one consultation (40 mins)</span><span class="fee-amount">68</span></p>
-        <p class="fee-item"><span class="fee-desc">Class (40 mins, max 3 participants)</span><span class="fee-amount">33</span></p>
-      </div>
+      {% endfor %}
     </div>
 
     <div class="row m-b-lg">
       <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-lg-8 col-lg-offset-2">
-        <p><sup>*</sup>If you have physiotherapy extras on your private health insurance.</p>
-        <p>All clinical pilates treatments, including classes, are delivered by a physiotherapist and can be claimed as a physiotherapy service.</p>
-        <p>We require 24 hours notice for cancelling an appointment or a full fee will be charged.</p>
-        <p>We do not do home visits.</p>
+        {{ section.content }}
       </div>
     </div>
   </div>
@@ -343,11 +337,11 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
         <br/>
         <ul class="list-unstyled list-spaced">
           <li class="m-b"><h6 class="text-uppercase">Opening hours</h6></li>
+          {% for hours in section.opening %}
           <li class="text-muted">
-            {% for hours in section.opening %}
             <strong>{{ hours.day }}</strong> {{ hours.times }}
-            {% endfor %}
           </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="col-sm-5 col-sm-offset-1 m-b-md">
