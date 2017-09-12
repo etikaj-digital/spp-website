@@ -2,7 +2,7 @@
 name: physiotherapy
 heading: Physiotherapy
 subheading: Our commitment to continuous learning means you get the latest research-based treatments.
-lead: Our qualified physiotherapists use their extensive knowledge to develop the most effective treatment plans for problems such as:
+lead: Our qualified physiotherapists use their extensive knowledge to develop the most effective treatment plans for problems such as
 leftlist:
 - Neck, middle and lower back pain
 - Sports Injuries
