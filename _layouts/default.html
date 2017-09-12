@@ -219,7 +219,7 @@
       {% if site.staff.size >= 2 %}
       <ol class="carousel-indicators">
         <li data-target="#carousel-staff" data-slide-to="0" class="active"></li>
-        {% for person in site.staff | offset:1 %}
+        {% for person in site.staff offset:1 %}
            <li data-target="#carousel-staff" data-slide-to="1"></li>
         {% endfor %}
       </ol>
