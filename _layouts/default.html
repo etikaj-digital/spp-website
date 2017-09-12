@@ -43,7 +43,7 @@
         <a href="#{{ menuitem | downcase | replace: " ","-" }}">{{ menuitem }}</a>
       </li>
       {% endfor %}
-      <li>
+      <li>  
         <a href="tel:{{ page.telephone | replace: " ","" | replace: ")","" | replace: "(","" }}"><span class="icon icon-phone">&nbsp;</span>{{ page.telephone }}</a>
       </li>
     </ul>
