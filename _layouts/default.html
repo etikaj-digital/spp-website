@@ -234,17 +234,18 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
         <li data-target="#carousel-staff" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
+        {% for person in site.staff %}
         <div class="item active">
           <div class="row app-align-center">
             <div class="col-sm-5 col-sm-push-7">
-                <img src="/img/ash.jpg">
+                <img src="{{ person.photo }}">
             </div>
             <div class="col-sm-6 col-sm-pull-5">
-              <h6 class="text-muted text-uppercase">Ashley Metcalfe<br/>owner Strathmore Physiotherapy and Pilates</h6>
-              <h3 class="m-t-0 m-b-md">“A quote here, either a personal belief about health or a compelling reason why people should use SPP”</h3>
-              <p class="m-b-md">After graduating from LaTrobe University, Ash spent seven years gaining experience in Melbourne’s hospital system and in private physiotherapy practices.</p>
-              <p class="m-b-md">In 2007, Ash opened Strathmore Physiotherapy & Pilates. To provide his clients with the very best treatments, he continuously updates his knowledge undertaking further study in a range of specialist areas including clinical pilates training.</p>
-              <p class="m-b-md">Ash was the chief physiotherapist for the Strathmore Football Club. He loves to keep fit and is a keen runner and triathlete. </p>
+              <h6 class="text-muted text-uppercase">{{ person.first }} {{ person.last}}<br/>{{ person.jobtitle }}</h6>
+              {% if person.quote %}
+              <h3 class="m-t-0 m-b-md">“{{ person.quote }}”</h3>
+              {% endif %}
+              <p class="m-b-md">{{ person.content }}</p>
             </div>
           </div>
         </div>
@@ -272,7 +273,7 @@ We then discuss your prognosis with you. We'll clearly outline your treatment pl
       {% for item in section.fees %}
       <div class="col-sm-6 col-sm-offset-3 p-x-md m-b-lg">
         <p><strong>{{ item.category }}</strong></p>
-        {% for services in item.services %}
+        {% for service in item.services %}
         <p class="fee-item"><span class="fee-desc">{{ service.description }}</span><span class="fee-amount">{{ service.charge }}</span></p>
         {% endfor %}
       </div>
