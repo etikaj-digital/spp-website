@@ -2,7 +2,7 @@
 name: firstvisit
 heading: What to expect on your first visit
 subheading: Immediate improvement and a clear treatment plan
-lead: After your first visit we aim to have you feeling an immediate improvement and provide you with:
+lead: After your first visit we aim to have you feeling an immediate improvement and provide you with
 list:
 - a clear understanding of your problem
 - a treatment plan
