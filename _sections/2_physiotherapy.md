@@ -7,7 +7,7 @@ leftlist:
 - Neck, middle and lower back pain
 - Sports Injuries
 - Headaches
-- Muscle, joint and tendon injuries
+- Muscle, joint, ligament and tendon injuries
 - Poor postural control
 rightlist:
 - Pre and post pregnancy related pain
