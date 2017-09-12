@@ -23,7 +23,7 @@ $(function () {
     $window.on('resize', maybeActivateDocNavigation)
 
     function maybeActivateDocNavigation () {
-      if ($window.width() > 768) {
+      if ($window.width() > 1024) {
         activateDocNavigation()
       } else {
         deactivateDocNavigation()
