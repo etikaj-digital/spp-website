@@ -87,3 +87,19 @@
         .stage-shelf {
           position: fixed;
         }
+
+        .is-padless-top {
+           padding-top: 0 !important;
+        }
+ 
+        .is-padless-bottom {
+           padding-bottom: 0 !important;
+        }
+
+        .is-marginless-top {
+           margin-top: 0 !important;
+        }
+ 
+        .is-marginless-bottom {
+           margin-bottom: 0 !important;
+        }
