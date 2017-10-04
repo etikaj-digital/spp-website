@@ -14,4 +14,6 @@ He is very comfortable treating all musculoskeletal and sporting conditions thro
 
 He had also completed Levels 1-4 DMA (Dance Medicine Australia) Clinical Pilates training.
  
-In the local community, Ash has worked as the chief physiotherapist for the Strathmore Football Club in the Essendon District Football League and still continues to treat many of these footballers.  He also loves keeping fit and pushing himself physically, which he does by competing in runs and triathlons.
+In the local community, Ash has worked as the chief physiotherapist for the Strathmore Football Club in the Essendon District Football League and still continues to treat many of these footballers.  
+
+He also loves keeping fit and pushing himself physically, which he does by competing in runs and triathlons.
