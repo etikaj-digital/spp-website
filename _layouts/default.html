@@ -137,15 +137,15 @@
         <h3 class="m-t-0">{{ section.subheading }}</h3>
         <p class="lead m-b-md">{{ section.lead }}</p>
         <div class="row hidden-sm" style="padding-bottom: 0rem">
-          <div class="col-sm-6 m-b-md">
-            <ul class="iconlist">
+          <div class="col-sm-6 m-b-md is-padless-bottom is-marginless-bottom">
+            <ul class="iconlist is-paddless-bottom is-marginless-bottom">
             {% for item in section.leftlist %}
               <li><span class="icon icon-check"></span>{{ item }}</li>
             {% endfor %}
             </ul>
           </div>
-          <div class="col-sm-6">
-            <ul class="iconlist">
+          <div class="col-sm-6 is-padless-top is-marginless-top">
+            <ul class="iconlist is-padless-top is-marginless-top">
             {% for item in section.rightlist %}
               <li><span class="icon icon-check"></span>{{ item }}</li>
             {% endfor %}
