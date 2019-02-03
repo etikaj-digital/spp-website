@@ -5,15 +5,15 @@ address: 1/279 Napier St, Strathmore VIC 3041
 phone: (03) 9379 3831
 opening:
 - day: Monday
-  times: 8.45am - 8pm
+  times: 9am - 8pm
 - day: Tuesday
-  times: 9am - 6pm
+  times: 9am - 8pm
 - day: Wednesday
-  times: 8am - 8pm
+  times: 9am - 8pm
 - day: Thursday
-  times: closed
+  times: 10am - 8pm
 - day: Friday
-  times: 8am - 5.30pm
+  times: 8am - 6pm
 - day: Saturday
   times: closed
 - day: Sunday
