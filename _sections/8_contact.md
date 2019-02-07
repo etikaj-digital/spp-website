@@ -1,7 +1,7 @@
 ---
 name: contact
 title: Contact Us
-address: 1/279 Napier St, Strathmore VIC 3041
+address: 51 Loeman Street, Strathmore VIC 3041
 phone: (03) 9379 3831
 opening:
 - day: Monday

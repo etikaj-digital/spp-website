@@ -6,17 +6,17 @@ fees:
 - category: Physiotherapy
   services:
   - description: Initial consultation (40 mins)
-    charge: 85
-  - description: Consultation (20-30 mins)
-    charge: 70
+    charge: 95
+  - description: Standard consultation (20-30 mins)
+    charge: 80
 - category: Clinical Pilates
   services:
   - description: Initial consultation (40 mins)
-    charge: 85
+    charge: 95
   - description: One-on-one consultation (40 mins)
-    charge: 73
+    charge: 83
   - description: Class (40 mins, max 3 participants)
-    charge: 35
+    charge: 38
 ---
 _*If you have physiotherapy extras on your private health insurance._
 
