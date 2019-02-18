@@ -216,7 +216,8 @@
   <div class="container">
 
     <div id="carousel-staff" class="carousel carousel-light slide" data-ride="carousel">
-      {% if site.staff.size >= 2 %}
+      {% comment %} Changed > 1 to -1 to disable carousel {% endcomment %}     
+      {% if site.staff.size == -1 %}
       <ol class="carousel-indicators">
         <li data-target="#carousel-staff" data-slide-to="0" class="active"></li>
         {% for person in site.staff offset:1 %}
@@ -226,7 +227,8 @@
       {% endif %}
       <div class="carousel-inner" role="listbox">
         {% for person in site.staff %}
-        <div class="item {% if forloop.index==1 %}active{% endif %}">
+        {% comment %} Changed 1 to -1 to disable carousel {% endcomment %}
+        <div class="item {% if forloop.index==-1 %}active{% endif %}">
           <div class="row app-align-center">
             <div class="col-sm-5 col-sm-push-7">
                 <img src="img/{{ person.photo }}">
