@@ -227,8 +227,8 @@
       {% endif %}
       <div class="carousel-inner" role="listbox">
         {% for person in site.staff %}
-        {% comment %} Changed 1 to -1 to disable carousel {% endcomment %}
-        <div class="item {% if forloop.index==-1 %}active{% endif %}">
+        {% comment %} Changed 1 to >0 to disable carousel {% endcomment %}
+        <div class="item {% if forloop.index>0 %}active{% endif %}">
           <div class="row app-align-center">
             <div class="col-sm-5 col-sm-push-7">
                 <img src="img/{{ person.photo }}">
