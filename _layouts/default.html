@@ -89,7 +89,7 @@
           <h1 class="block-title m-b-sm">{{ page.title }}</h1>
           <p class="lead m-b-md text-muted">{{ content }}</p>
           <a href="#about"><button class="btn btn-info btn-lg">Learn more</button></a>
-          <a href="#contact"><button class="btn btn-primary btn-lg">Book online</button></a>
+          <a href="#book-online"><button class="btn btn-primary btn-lg">Book online</button></a>
         </div>
       </div>
     </div>
@@ -318,6 +318,34 @@
   
 {% endif %}
   
+{% if section.name == 'bookonline' %} 
+  
+<!-- What to expect -->
+<div id="book-online" class="block block-secondary">
+  <div class="container">
+    <div class="row app-align-center">
+       <h6 class="text-muted text-uppercase">{{ section.heading }}</h6>
+       <h3 class="m-t-0">{{ section.subheading }}</h3>
+       <p class="lead m-b-md">{{ section.lead }}</p>
+       <!-- insert Cliniko iframe -->
+       <iframe id='cliniko-98170994' src='https://strathmore-physiotherapy-and-pilates.au2.cliniko.com/bookings?embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
+       <script type='text/javascript'>
+         window.addEventListener('message', function handleIFrameMessage (e) {
+           var clinikoBookings = document.getElementById('cliniko-98170994');
+           if (typeof e.data !== 'string') return;
+           if (e.data.search('cliniko-bookings-resize') > -1) {
+             var height = Number(e.data.split(':')[1]);
+             clinikoBookings.style.height = height + 'px';
+           }
+           e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
+        });
+       </script>
+    </div>
+  </div>
+</div>
+
+{% endif %}  
+  
 {% if section.name == 'contact' %}
 
 <!-- contact -->
@@ -341,7 +369,11 @@
           {% endfor %}
         </ul>
         <br/>
-        <ul class="list-unstyled list-spaced">
+      </div>
+      <!-- end left column -->
+      <!-- start right column -->
+      <div class="col-sm-5 col-sm-offset-1 m-b-md">
+         <ul class="list-unstyled list-spaced">
           <li class="m-b"><h6 class="text-uppercase">Contact</h6></li>
           <li class="text-muted">
             <strong>Address</strong> {{ section.address }}
@@ -359,23 +391,6 @@
         <div class="google-maps">
            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.370218917076!2d144.91686931531643!3d-37.734457979766844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b78f7d6388b%3A0x8dd52d6d52908d29!2s51+Loeman+St%2C+Strathmore+VIC+3041!5e0!3m2!1sen!2sau!4v1549534148758" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>        
         </div>
-      </div>
-      <!-- end left column -->
-      <!-- start right column -->
-      <div class="col-sm-5 col-sm-offset-1 m-b-md">
-        <!-- insert Cliniko iframe -->
-        <iframe id='cliniko-98170994' src='https://strathmore-physiotherapy-and-pilates.au2.cliniko.com/bookings?embedded=true' frameborder='0' scrolling='auto' width='100%' height='1000' style='pointer-events: auto;'></iframe>
-        <script type='text/javascript'>
-          window.addEventListener('message', function handleIFrameMessage (e) {
-            var clinikoBookings = document.getElementById('cliniko-98170994');
-            if (typeof e.data !== 'string') return;
-            if (e.data.search('cliniko-bookings-resize') > -1) {
-              var height = Number(e.data.split(':')[1]);
-              clinikoBookings.style.height = height + 'px';
-            }
-            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
-         });
-        </script>
       </div>
       <!-- end right column -->
     </div>
