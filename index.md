@@ -7,6 +7,7 @@ menu:
 - First Visit
 - Staff
 - Fees
+- Book online
 - Contact
 telephone: (03) 9379 3831
 ---
