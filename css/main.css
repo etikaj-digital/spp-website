@@ -13,12 +13,11 @@
           background: rgba(0,0,0,0.2);
         }
 
-        .navbar-transparent .navbar-nav {
+        .navbar {
           background-image: url(../img/spp_logo_thumb.png);
           background-position: left center;
           background-repeat: no-repeat;
           background-size: contain;
-          padding-left: 4rem;
         }
 
         .navbar-transparent .navbar-nav li a{
@@ -42,6 +41,10 @@
         .btn-primary {
           background-color: rgb(204,0,0);
           border-color: rgb(204,0,0)
+        }
+
+        .btn-lg {
+          margin-top: 4px;
         }
 
         .block-secondary {
@@ -102,4 +105,10 @@
  
         .is-marginless-bottom {
            margin-bottom: 0 !important;
+        }
+
+        @media (min-width: 1024px){
+           .navbar-nav {
+              margin: 7.25px -10px;
+           }
         }
