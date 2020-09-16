@@ -67,7 +67,7 @@
     </div>
 
     <div class="navbar-collapse collapse text-uppercase">
-      <ul class="nav navbar-nav" style="margin-left: 40px;">
+      <ul class="nav navbar-nav">
       {% for menuitem in page.menu %}
       <li >
         <a href="#{{ menuitem | downcase | replace: " ","-" }}">{{ menuitem }}</a>
