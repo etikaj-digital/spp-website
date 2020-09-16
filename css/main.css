@@ -43,6 +43,10 @@
           border-color: rgb(204,0,0)
         }
 
+        .btn-lg {
+          margin-top: 4px;
+        }
+
         .block-secondary {
           border-bottom: 2px solid rgba(245,245,245,0.85)
         }
