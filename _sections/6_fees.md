@@ -8,13 +8,13 @@ fees:
   - description: Initial consultation (40 mins)
     charge: 100
   - description: Standard consultation (20-30 mins)
-    charge: 85
+    charge: 90
 - category: Clinical Pilates
   services:
   - description: Initial consultation (40 mins)
-    charge: 100
+    charge: 105
   - description: One-on-one consultation (40 mins)
-    charge: 85
+    charge: 90
   - description: Class (40 mins, max 3 participants)
     charge: 40
 ---
